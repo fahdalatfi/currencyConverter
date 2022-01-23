@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Currency Converter</h1>
+
+    <div class="container">
+        <input type="text" id="amount">
+        <select id="currency">
+            <option value="UAH">UAH</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="RUB">RUB</option>
+        </select>
+
+        <select id="convertedCurrency">
+            <option value="UAH">UAH</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="RUB">RUB</option>
+        </select>
+
+        <input type="text" id="results" placeholder="Results">
+        <input type="submit" id="btn" onclick="convertion()">
+    </div>
+
+
+</body>
+
+
+<style>
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f7f7f0;
+    height: 100%;
+}
+
+p{
+    display: inline;
+}
+
+
+
+::placeholder {
+    color:black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+
+#amount , #convertedCurrency , #results , #currency, #btn {
+    border-style: none;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px #b2b3a1 solid;
+    padding: 10px;
+}
+
+
+h1 {
+    position: absolute;
+    top:150px;
+    left: 42%;
+}
+</style>
+<script src="app.js"></script>
+</html>
